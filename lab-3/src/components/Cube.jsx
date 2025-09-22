@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import supermanImg from "../assets/4901f122-a5cf-447c-a854-767d41ad24a8.jpeg";
+import supermanImg from "../assets/notes-icon-in-trendy-flat-style-isolated-on-white-background-notes-silhouette-symbol-for-your-website-design-logo-app-ui-illustration-eps10-free-vector.jpg";
 const textureLoader = new THREE.TextureLoader();
 const supermanTexture = textureLoader.load(supermanImg);
 

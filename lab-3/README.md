@@ -1,12 +1,10 @@
-# React + Vite
+## Component Tree + Data Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Diagram](./src/assets/diagram-export-9-22-2025-1_16_35-PM.svg)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Explanation**:  
+- `App` stores styles and passes data further.  
+- `TodoLists` manages the `todos` array.  
+- `AddTodoForm` receives the `onAddTodo` function to add new items.  
+- `TodoItem` has a locate state `isCompleted` and receives `task` and `onDelete` via `props`.  
+- `Cubes` works with `meshRef` (3D visualization).  
